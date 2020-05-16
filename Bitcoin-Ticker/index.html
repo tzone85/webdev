@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin Ticker</title>
+</head>
+<body>
+<h1>Bitcoin Ticker</h1>
+
+<form action="/" method="post">
+
+    <input type="text" name="amount" placeholder="Quantity">
+
+    <select name="crypto">
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Etherium</option>
+        <option value="LTC">Litecoins</option>
+        <option value="XRP">XRP</option>
+        <option value="BNB">Binance Coin</option>
+        <option value="XTZ">Tezos</option>
+    </select>
+
+    <select name="fiat">
+        <option value="USD">US Dollars</option>
+        <option value="GB">GB Pounds</option>
+        <option value="LTC">EUR</option>
+        <option value="R">Rands</option>
+    </select>
+    <button type="submit">Check</button>
+</form>
+</body>
+</html>

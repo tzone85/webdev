@@ -23,9 +23,31 @@ app.post("/", function (req, res) {
    var lastName = req.body.lName;
    var email = req.body.email;
 
-   console.log(firstName, lastName, email);
+   var options = {
+       url: "https://us18.api.mailchimp.com/3.0/lists/088018369f",
+       method: "POST",
+       headers: {
+           "Authorization": "Thando 0c4675020c4a9c9cb56ed7e171f1b2e9-us18"
+       }
+
+
+   }
+   request(options, function (error, response, body) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(response.statusCode);
+        }
+   })
+
 });
 
 app.listen(3000, function () {
     console.log("listenning to port 3000");
 });
+
+// API KEY
+// 0c4675020c4a9c9cb56ed7e171f1b2e9-us18
+
+// List ID
+// 088018369f

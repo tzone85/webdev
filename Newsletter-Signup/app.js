@@ -67,9 +67,3 @@ app.post("/failure", function (req, res) {
 app.listen(3000, function () {
     console.log("listenning to port 3000");
 });
-
-// API KEY
-// 0c4675020c4a9c9cb56ed7e171f1b2e9-us18
-
-// List ID
-// 088018369f
